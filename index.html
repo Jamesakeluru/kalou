@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#351d31">
+  <meta name="description" content="A birthday celebration made with love for Kalou.">
+  <title>For Kalou, with love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="birthday-entry" id="birthday-entry" aria-label="Open your birthday surprise">
+    <p class="birthday-entry-eyebrow">A little surprise for you</p>
+    <a class="birthday-entry-link" id="birthday-entry-link" href="#home">
+      <span>Happy birthday,<br><em>Kalou.</em></span>
+      <span class="birthday-entry-arrow" aria-hidden="true">↓</span>
+    </a>
+    <p class="birthday-entry-hint">Tap to open your birthday surprise</p>
+  </section>
+
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Kalou's birthday page">Kalou<span aria-hidden="true">&hearts;</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#memories">Our memories</a>
+      <a href="#letter">A little note</a>
+    </nav>
+    <button class="audio-toggle" id="audio-toggle" type="button" aria-label="Play birthday playlist" aria-pressed="false">
+      <span class="audio-icon" aria-hidden="true">♫</span>
+      <span class="audio-label">Play birthday playlist</span>
+    </button>
+    <span class="music-notice" id="music-status" role="status" aria-live="polite" hidden></span>
+  </header>
+  <audio id="birthday-music" src="media/track-one.mp3" preload="auto" hidden></audio>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A day as lovely as you</p>
+        <h1 id="hero-title">Happy birthday,<br><em>Kalou.</em></h1>
+        <p class="hero-message">Today is all about celebrating you: your beautiful heart, your bright smile, and all the little things that make life sweeter.</p>
+        <a class="primary-button" href="#memories">Let’s celebrate <span aria-hidden="true">&darr;</span></a>
+        <p class="from-line">With all my love, <span>Dungase</span></p>
+      </div>
+      <div class="hero-art">
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="media/1.jpeg" alt="Kalou, in a black-and-white birthday portrait">
+        </div>
+        <span class="photo-caption">My favorite kind of beautiful</span>
+        <span class="sparkle sparkle-one" aria-hidden="true">✳</span>
+        <span class="sparkle sparkle-two" aria-hidden="true">✦</span>
+        <span class="floating-note" aria-hidden="true">for my<br>favorite person</span>
+      </div>
+      <span class="hero-index" aria-hidden="true">01 / A DAY FOR YOU</span>
+    </section>
+
+    <section class="birthday-note" aria-label="Birthday message">
+      <span class="note-mark" aria-hidden="true">“</span>
+      <p>Another year of <em>you</em> in this world is a gift to everyone lucky enough to know you.</p>
+      <span class="note-flourish" aria-hidden="true">With love, always</span>
+      <figure class="photo-poster note-photo-poster">
+        <img src="media/kalou-02.jpeg" alt="Kalou out shopping with a friend" loading="lazy">
+        <figcaption>A day out, together</figcaption>
+      </figure>
+    </section>
+
+    <section class="memories section-wrap" id="memories" aria-labelledby="memories-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> Little moments, big love</p>
+          <h2 id="memories-title">A few reasons<br>to <em>celebrate you.</em></h2>
+        </div>
+        <p class="section-intro">The best memories are the ones that feel like us. Tap any video to relive the moment and hear its original sound.</p>
+      </div>
+
+      <div class="memory-grid" id="memory-grid">
+        <figure class="memory-card">
+          <video controls playsinline preload="metadata" aria-label="Birthday memory video 1">
+            <source src="media/kalou-01.mp4" type="video/mp4">
+          </video>
+          <figcaption class="memory-video-caption"><span>A little birthday memory</span><span class="caption-heart" aria-hidden="true">&hearts;</span></figcaption>
+        </figure>
+        <figure class="memory-card">
+          <video controls playsinline preload="metadata" aria-label="Birthday memory video 2">
+            <source src="media/kalou-02.mp4" type="video/mp4">
+          </video>
+          <figcaption class="memory-video-caption"><span>A moment to keep</span><span class="caption-heart" aria-hidden="true">&hearts;</span></figcaption>
+        </figure>
+        <figure class="memory-card">
+          <video controls playsinline preload="metadata" aria-label="Birthday memory video 3">
+            <source src="media/kalou-03.mp4" type="video/mp4">
+          </video>
+          <figcaption class="memory-video-caption"><span>One for the memories</span><span class="caption-heart" aria-hidden="true">&hearts;</span></figcaption>
+        </figure>
+        <figure class="memory-card">
+          <video controls playsinline preload="metadata" aria-label="Birthday memory video 4">
+            <source src="media/kalou-04.mp4" type="video/mp4">
+          </video>
+          <figcaption class="memory-video-caption"><span>A favorite little clip</span><span class="caption-heart" aria-hidden="true">&hearts;</span></figcaption>
+        </figure>
+        <figure class="memory-card">
+          <video controls playsinline preload="metadata" aria-label="Birthday memory video 5">
+            <source src="media/kalou-05.mp4" type="video/mp4">
+          </video>
+          <figcaption class="memory-video-caption"><span>Just because it’s you</span><span class="caption-heart" aria-hidden="true">&hearts;</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="letter-section" id="letter" aria-labelledby="letter-title">
+      <div class="letter-art" aria-label="A birthday wish for Kalou">
+        <span class="letter-art-star" aria-hidden="true">✳</span>
+        <span class="letter-art-label">A little piece of my heart</span>
+        <span class="letter-art-name">For you,<br><em>Kalou.</em></span>
+        <span class="letter-art-flourish" aria-hidden="true">with love, always</span>
+      </div>
+      <div class="letter-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> Just for you</p>
+        <figure class="photo-poster letter-photo-poster">
+          <img src="media/kalou-03.jpeg" alt="Kalou smiling in her sunglasses" loading="lazy">
+          <figcaption>That gorgeous smile</figcaption>
+        </figure>
+        <h2 id="letter-title">To my favorite<br><em>person.</em></h2>
+        <p>Happy birthday, my love. I hope this next chapter brings you the same joy, kindness, and warmth you bring into my life every day.</p>
+        <p>Keep dreaming big, keep being exactly who you are, and never forget how deeply you are loved. I’m so grateful I get to celebrate you today and every day.</p>
+        <p class="letter-signoff">All my love, always <span>— Dungase <span aria-hidden="true">&hearts;</span></span></p>
+        <button class="celebrate-button" id="celebrate-button" type="button">One more birthday wish <span aria-hidden="true">✦</span></button>
+        <p class="celebration-message" id="celebration-message" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Made with love for Kalou</span>
+    <span aria-hidden="true">&hearts;</span>
+    <a class="tiktok-link" href="https://www.tiktok.com/@kalou306?_r=1&amp;_t=ZS-9BCL0jsdAKC" target="_blank" rel="noopener noreferrer">Follow Kalou on TikTok <span aria-hidden="true">↗</span></a>
+    <a href="#home">Back to the beginning ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
